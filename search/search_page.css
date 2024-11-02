@@ -197,7 +197,6 @@ legend {
     font-style: italic;
 }
 
-
 /*my code*/
 
 body {
@@ -208,7 +207,6 @@ body {
 .container {
     margin: 0 150px;
 }
-
 
 /*header-styles*/
 .header__body {
@@ -242,11 +240,17 @@ body {
     font-size: 25px;
 }
 
-
 /*welcome-block-styles*/
 .welcome-block__body {
     display: flex;
     justify-content: space-between;
+}
+
+.page-name{
+    font-size: 1.5em;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2E266F;
 }
 
 .welcome-block__image img {
@@ -266,6 +270,13 @@ body {
     font-weight: 700;
     font-size: 72px;
     line-height: 72px;
+}
+
+.select_button{
+    background-color: #2E266F;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .search-bar {
@@ -306,11 +317,9 @@ body {
     text-align: left;
 }
 
-
-
 .product-card__image img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .product-card__title {
@@ -340,4 +349,70 @@ footer {
     margin-top: 40px;
 }
 
+/*mob-style*/
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
 
+    .header__body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__body .logo h1 {
+        font-size: 48px;
+    }
+
+    .header__body ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome-block__body {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .welcome-block__text h1 {
+        font-size: 50px;
+    }
+
+    .welcome-block__text p {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        width: 300px;
+    }
+    .welcome-block img{
+        max-height: 300px;
+        max-width: 300px;
+    }
+    .product-card{
+        transform: translateX(45px);
+    }
+
+    .search-bar button {
+        margin-top: 10px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0;
+        max-width: 300px;
+
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+    .welcome-block__text h1{
+        display: none;
+    }
+}
