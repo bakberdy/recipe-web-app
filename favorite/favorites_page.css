@@ -283,13 +283,20 @@ footer {
     color: #fff;
     padding: 40px 20px;
     text-align: center;
-    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
+main {
+    flex: 1;
+    min-height: 650px;
+}
+
 .remove-favorite-btn{
     background-color: red;
     color: black;
     border-radius: 15px;
     padding: 10px 20px;
+
 }
 .show-details-btn{
     background-color: blue;
@@ -303,6 +310,7 @@ footer {
     font-weight: bold;
     color: #2E266F;
 }
+
 
 /*mob-style*/
 @media (max-width: 768px) {

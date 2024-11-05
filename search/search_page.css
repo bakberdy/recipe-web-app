@@ -272,6 +272,7 @@ body {
     line-height: 72px;
 }
 
+
 .select_button{
     background-color: #2E266F;
     color: white;
@@ -347,6 +348,16 @@ footer {
     padding: 40px 20px;
     text-align: center;
     margin-top: 40px;
+}
+
+.search-results{
+    background-color: white;
+    color: #000002;
+    font-size: 20px;
+}
+.search-results h2{
+    margin: 15px;
+    font-size: 16px;
 }
 
 /*mob-style*/
